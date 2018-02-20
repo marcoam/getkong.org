@@ -125,7 +125,7 @@ $ curl -X POST http://127.0.0.1:8001/services \
     --data "url=http://example.com"
 
 $ curl -X POST http://127.0.0.1:8001/services/example/routes \
-    --data "paths=example"
+    --data "paths[]=example.com"
 ```
 
 A request to the Proxy port of both node `A` and `B` will cache this Service, and

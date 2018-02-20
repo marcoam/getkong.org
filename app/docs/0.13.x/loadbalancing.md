@@ -289,7 +289,7 @@ $ curl -X POST http://kong:8001/services/ \
     --data "url=http://address.v1.service/address"
 
 $ curl -X POST http://kong:8001/services/address-service/routes \
-    --data "hosts=address.mydomain.com" \
+    --data "hosts[]=address.mydomain.com" \
 ```
 
 Requests with host header set to `address.mydomain.com` will now be proxied
